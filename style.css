@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom, #000, #001a1a);
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #00ff88;
+}
+.typing {
+  color: #00e0ff;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  height: 70px;
+}
+.hero-buttons a {
+  text-decoration: none;
+  background: #00ff88;
+  color: #000;
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88 inset;
+  transition: 0.3s;
+}
+.hero-buttons a:hover {
+  background: #000;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 15px #00ff88, 0 0 30px #00ff88;
+}
+.scroll-down {
+  margin-top: 30px;
+  animation: bounce 2s infinite;
+  color: #00e0ff;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+.about, .skills, .projects, .contact {
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+.skill-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  background: #111;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00e0ff;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.project-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.project {
+  background: #111;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ff88;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #00ff88;
+}
+button {
+  padding: 10px;
+  background: #00ff88;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #000;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+}
+footer {
+  padding: 30px 20px;
+  background: #001a1a;
+  text-align: center;
+}
+.socials a {
+  color: #00e0ff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.socials a:hover {
+  color: #00ff88;
+}
+
+
+/* Logo Styling */
+.hero-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
