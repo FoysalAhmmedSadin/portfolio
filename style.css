@@ -129,9 +129,6 @@ footer {
 .socials a:hover {
   color: #00ff88;
 }
-
-
-/* Logo Styling */
 .hero-logo {
     display: block;
     margin: 0 auto 20px auto;
@@ -140,7 +137,7 @@ footer {
     border-radius: 50%;
 }
 .navbar {
-  background-color: #1a103d;
+  background-color: #000000;
   text-align: center;
   padding: 10px 0;
 }
@@ -155,12 +152,12 @@ footer {
 }
 
 .navbar ul li a {
-  color: white;
+  color: #00ff00;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
 }
 
 .navbar ul li a:hover {
-  color: #00ffcc;
-  }
+  color: #00cc99;
+}
