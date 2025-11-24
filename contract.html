@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Foysal Ahmmed Sadin</title>
-  
+
   <link rel="icon" type="image/jpeg" href="https://i.ibb.co.com/pBTQ81dx/FB-IMG-1763714618435.jpg">
 
   <style>
@@ -14,9 +14,47 @@
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background: #000000;
+      padding: 0;
+      display: block;
+    }
+
+    /* NAVIGATION FIX */
+    .navbar {
+      background-color: #000000;
+      padding: 15px 0;
+      text-align: center;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 0 10px rgba(0,255,136,0.2);
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
       display: flex;
       justify-content: center;
-      padding: 20px 0;
+      gap: 40px;
+    }
+
+    .navbar ul li a {
+      color: #00ff88;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .navbar ul li a:hover {
+      color: #00cc99;
+    }
+
+    /* CARD */
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 30px 0;
     }
 
     .card {
@@ -27,7 +65,7 @@
       padding: 30px;
       text-align: center;
       box-shadow: 0 10px 25px rgba(0,255,136,0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: 0.3s;
     }
 
     .card:hover {
@@ -43,32 +81,21 @@
       margin-bottom: 15px;
       border: 3px solid #00ff88;
       box-shadow: 0 0 15px rgba(0,255,136,0.5);
-      transition: transform 0.3s;
-    }
-
-    .avatar:hover {
-      transform: scale(1.05);
     }
 
     h2 {
-      margin: 10px 0 5px;
+      color: white;
+      margin-top: 10px;
       font-size: 26px;
       font-weight: 600;
-      color: #ffffff;
-    }
-    
-    h3.dob {
-      opacity: 0.8;
-      margin-bottom: 20px;
-      color: #ffffff;
     }
 
     p.bio {
-      opacity: 0.8;
-      margin-bottom: 20px;
       color: #aaaaaa;
+      margin-bottom: 20px;
     }
 
+    /* BUTTONS */
     .links {
       display: flex;
       flex-direction: column;
@@ -77,26 +104,24 @@
     }
 
     .links button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      padding: 12px;
       background: #00ff88;
-      color: #000000;
       border: none;
+      padding: 12px;
       border-radius: 15px;
       font-size: 18px;
       font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
       cursor: pointer;
       transition: 0.3s;
     }
 
     .links button:hover {
       background: #00cc6a;
-      box-shadow: 0 8px 20px rgba(0,255,136,0.4);
       transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,255,136,0.4);
     }
 
     .links img {
@@ -107,86 +132,99 @@
     .qr-code {
       width: 130px;
       height: 130px;
-      object-fit: cover;
       border: 3px solid #00ff88;
+      margin-top: 20px;
       box-shadow: 0 0 15px rgba(0,255,136,0.5);
-      margin: 20px auto 10px;
-      border-radius: 0; /* square, no rounding */
-      transition: transform 0.3s;
-    }
-
-    .bottom-image:hover {
-      transform: scale(1.05);
     }
 
     .copyright {
+      margin-top: 20px;
       color: #00ff88;
-      font-weight: 500;
-      margin-bottom: 10px;
       opacity: 0.8;
+      margin-bottom: 10px;
     }
-
   </style>
 </head>
+
 <body>
-  <div class="card">
-    
-    <img src="https://i.ibb.co.com/pBTQ81dx/FB-IMG-1763714618435.jpg" alt="Profile" class="avatar" />
-    
-    <h2>Foysal Ahmmed Sadin</h2>
-    
-    <template>
-    <h3 class="dob">07 December 2006</h3>
-    </template>
-    
-    <p class="bio">404 bio not found.</p>
 
-    <div class="links">
-      
-      <button onclick="location.href='tel:+880 9638-606642'"><img src="https://i.ibb.co.com/rKdkGszp/call.png" /> Call</button>
-      
-      <button onclick="location.href='mailto:foysal24x7@gmail.com'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" /> Email</button>
-      
-      <button onclick="location.href='https://wa.me/+8801940401566'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" /> WhatsApp</button>
-      
-      <button onclick="location.href='https://t.me/FoysalAhmmedSadin'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" /> Telegram</button>
-      
-      <button onclick="location.href='https://facebook.com/FoysalAhmmedSadin'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" /> Facebook</button>
-      
-      <button onclick="location.href='https://instagram.com'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" /> Instagram</button>
-      
-      <button onclick="location.href='https://threads.net'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/threads.svg" /> Threads</button>
-      
-      <button onclick="location.href='https://x.com'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" /> X</button>
-      
-      <button onclick="location.href='https://linkedin.com'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" /> LinkedIn</button>
-      
-      <button onclick="location.href='https://youtube.com'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" /> YouTube</button>
-      
-      <button onclick="location.href='https://reddit.com'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/reddit.svg" /> Reddit</button>
-      
-      <button onclick="location.href='https://github.com'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" /> GitHub</button>
-      
-      <button onclick="location.href='"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wechat.svg" /> Wechat</button>
-      
-      <button onclick="location.href='#'"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/line.svg" /> Line</button>
-      
-      <button onclick="location.href='#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/apple.svg" /> Apple</button>
-      
-      <template>
-        
-      <button onclick="location.href='cv.pdf'"><img src="https://i.ibb.co.com/Gf6VvL4h/download.png" /> Download CV</button>
-      
-      <button onclick="location.href='resume.docx'"><img src="https://i.ibb.co.com/Gf6VvL4h/download.png" /> Download Resume</button>
-      
-      </template>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CARD -->
+  <div class="container">
+    <div class="card">
+
+      <img src="https://i.ibb.co.com/pBTQ81dx/FB-IMG-1763714618435.jpg" class="avatar" />
+
+      <h2>Foysal Ahmmed Sadin</h2>
+      <p class="bio">404 bio not found.</p>
+
+      <div class="links">
+
+        <button onclick="location.href='tel:+8809638606642'">
+          <img src="https://i.ibb.co.com/rKdkGszp/call.png"> Call
+        </button>
+
+        <button onclick="location.href='mailto:foysal24x7@gmail.com'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"> Email
+        </button>
+
+        <button onclick="location.href='https://wa.me/+8801940401566'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"> WhatsApp
+        </button>
+
+        <button onclick="location.href='https://t.me/FoysalAhmmedSadin'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg"> Telegram
+        </button>
+
+        <button onclick="location.href='https://facebook.com/FoysalAhmmedSadin'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"> Facebook
+        </button>
+
+        <button onclick="location.href='https://instagram.com'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"> Instagram
+        </button>
+
+        <button onclick="location.href='https://threads.net'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/threads.svg"> Threads
+        </button>
+
+        <button onclick="location.href='https://x.com'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg"> X
+        </button>
+
+        <button onclick="location.href='https://linkedin.com'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"> LinkedIn
+        </button>
+
+        <button onclick="location.href='https://youtube.com'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"> YouTube
+        </button>
+
+        <button onclick="location.href='https://reddit.com'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/reddit.svg"> Reddit
+        </button>
+
+        <button onclick="location.href='https://github.com'">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"> GitHub
+        </button>
+
+      </div>
+
+      <img src="https://i.ibb.co.com/LXMmytYh/qr.png" class="qr-code">
+
+      <div class="copyright">©2025 Foysal Ahmmed Sadin. All rights reserved.</div>
+
     </div>
-
-    <img src="https://i.ibb.co.com/LXMmytYh/qr.png" alt="Qr Code" class="qr-code" />
-
-    <div class="copyright">©2025 Foysal Ahmmed Sadin. All rights reserved.</div>
   </div>
+
 </body>
 </html>
-
-  
