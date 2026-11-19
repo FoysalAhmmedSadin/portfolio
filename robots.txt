@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://foysal.bro.bd/sitemap.xml
