@@ -3,82 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Foysal Ahmmed Sadin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="The portfolio of Foysal Ahmmed Sadin — web design, creative projects and digital experiences.">
+  <title>Foysal Ahmmed Sadin | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="icon" type="image/jpeg" href="https://i.ibb.co.com/ynQF6Sjb/IMG-20260510-155224-641.jpg">
 </head>
 <body>
-<nav class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html">About</a></li>
-    <li><a href="index.html">Services</a></li>
-    <li><a href="contract.html">Contact</a></li>
-    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-  </ul>
-</nav>
-  <section class="hero">
-    <img src="https://i.ibb.co.com/pBTQ81dx/FB-IMG-1763714618435.jpg" alt="Logo" class="hero-logo">
-    <h1>Foysal Ahmmed Sadin</h1>
-    <div class="typing" id="typing-text" style="margin-top: -20px;"></div>
-    <div class="hero-buttons">
-      <a href="#contact">Hire Me</a>
-      <a href="#projects">View Work</a>
-    </div>
-    <div class="scroll-down">↓ Scroll Down</div>
-  </section>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="#home">FAS<span>.</span></a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="contract.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+  </nav>
 
-  <section class="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>I’m a passionate Web Designer, Gamer, and Creative Thinker. I love building modern websites that blend design and function seamlessly.</p>
-  </section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content" data-aos="fade-up">
+        <div class="eyebrow"><span class="status-dot"></span> Welcome to my portfolio</div>
+        <img src="https://i.ibb.co.com/pBTQ81dx/FB-IMG-1763714618435.jpg" alt="Foysal Ahmmed Sadin" class="hero-logo">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>Foysal Ahmmed <span>Sadin</span></h1>
+        <div class="typing" id="typing-text" aria-live="polite"></div>
+        <p class="hero-description">I enjoy creating modern digital experiences through thoughtful design, clean code and creativity.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">View My Work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#about">Discover More</a>
+        </div>
+      </div>
+      <a class="scroll-down" href="#about">Scroll to explore <span>↓</span></a>
+    </section>
 
-  <section class="skills" data-aos="fade-up">
-    <h2>Skills</h2>
-    <div class="skill-cards">
-      <div class="card">HTML</div>
-      <div class="card">CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">Video Editing</div>
-      <div class="card">Gaming UI</div>
-    </div>
-  </section>
+    <section class="about section-wrap" id="about" data-aos="fade-up">
+      <div class="section-kicker">A LITTLE INTRODUCTION</div>
+      <h2>About <span>Me</span></h2>
+      <div class="about-panel">
+        <div class="about-mark">FAS<span>.</span></div>
+        <div class="about-copy">
+          <h3>Creativity meets technology.</h3>
+          <p>I'm Foysal Ahmmed Sadin, a creative enthusiast interested in web design, gaming and digital content. I enjoy exploring ideas and turning them into clean, engaging online experiences.</p>
+          <p>From building web pages with HTML, CSS and JavaScript to exploring visual design and video editing, I'm always curious to learn, experiment and improve my skills.</p>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Video Editing</span><span>Gaming UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="projects" id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project-cards">
-      <div class="project">Portfolio Website</div>
-      <div class="project">Gaming UI Design</div>
-      <div class="project">Video Editing Showcase</div>
-    </div>
-  </section>
+    <section class="services section-wrap" id="services" data-aos="fade-up">
+      <div class="section-kicker">WHAT I CAN HELP WITH</div>
+      <h2>My <span>Services</span></h2>
+      <p class="section-intro">Creative and practical digital work, with a focus on clean visuals and user-friendly experiences.</p>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">⌘</div>
+          <h3>Web Design</h3>
+          <p>Modern, clean and responsive website layouts designed to look good across desktop and mobile screens.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">〈/〉</div>
+          <h3>Front-End Development</h3>
+          <p>Building website interfaces with HTML, CSS and JavaScript, with attention to structure and usability.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Creative UI Concepts</h3>
+          <p>Exploring visual styles and gaming-inspired interface concepts with clear layouts and engaging details.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">▣</div>
+          <h3>Video Editing</h3>
+          <p>Creative video editing for polished, engaging visual content and personal projects.</p>
+        </article>
+      </div>
+    </section>
 
-  <section class="contact" id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <section class="projects section-wrap" id="projects" data-aos="fade-up">
+      <div class="section-kicker">A FEW THINGS I EXPLORE</div>
+      <h2>Selected <span>Projects</span></h2>
+      <div class="project-cards">
+        <article class="project"><span>01 / WEB</span><h3>Portfolio Website</h3><p>A personal space to present my work, interests and digital skills.</p></article>
+        <article class="project"><span>02 / UI DESIGN</span><h3>Gaming UI Concepts</h3><p>Exploring gaming-inspired interfaces and visual experiences.</p></article>
+        <article class="project"><span>03 / VIDEO</span><h3>Video Editing</h3><p>Creative editing experiments and visual storytelling projects.</p></article>
+      </div>
+    </section>
+  </main>
 
   <footer>
+    <div class="footer-brand">FAS<span>.</span></div>
     <div class="socials">
-      <a href="https://www.facebook.com/FoysalAhmmedSadin1">Facebook</a>
-      <a href="https://www.instagram.com/yours_foysal">Instagram</a>
-      <a href="https://github.com/FoysalAhmmedSadin">GitHub</a>
+      <a href="https://www.facebook.com/FoysalAhmmedSadin1" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/yours_foysal" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://github.com/FoysalAhmmedSadin" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="mailto:foysal24x7@gmail.com">Email</a>
     </div>
-    <p>©2025-2026 Foysal Ahmmed Sadin. All rights reserved.</p>
+    <p>© 2025–2026 Foysal Ahmmed Sadin. All rights reserved.</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
   <script>
-    AOS.init();
+    if (window.AOS) AOS.init({ once: true, duration: 700, offset: 70 });
   </script>
 </body>
 </html>
