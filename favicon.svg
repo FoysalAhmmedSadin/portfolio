@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="15" fill="#050505"/>
+  <text x="8" y="43" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="800" letter-spacing="-2" fill="#00FF88">FAS</text>
+  <circle cx="57" cy="42" r="3" fill="#00FF88"/>
+</svg>
