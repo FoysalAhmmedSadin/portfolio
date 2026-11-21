@@ -132,6 +132,7 @@ h2 { margin: 10px 0 35px; color: #f2fff8; font-size: clamp(29px, 4vw, 42px); tex
 .service-card:hover { transform: translateY(-6px); border-color: rgba(0,255,136,.55); background: #0d1913; }
 .service-icon { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 12px; color: var(--accent); background: rgba(0,255,136,.09); font-size: 22px; font-weight: 700; }
 .android-service-icon svg { display: block; width: 26px; height: 26px; max-width: 26px; max-height: 26px; aspect-ratio: 1 / 1; flex: 0 0 26px; }
+.code-service-icon { display: flex; align-items: center; justify-content: center; line-height: 1; font-family: monospace; font-size: 18px; letter-spacing: -3px; padding-right: 3px; }
 .service-card h3 { color: #effff6; font-size: 16px; margin: 19px 0 9px; }
 .service-card p, .project p { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0; }
 .project-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
